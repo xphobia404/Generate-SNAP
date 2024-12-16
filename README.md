@@ -3,12 +3,6 @@
 - npm install dotenv express
 - run 'node generateSNAP.js'
 
-## Acess Token
-Hit to your localhost IP http://127.0.0.1:8070/accessToken
-
-## Acess Token
-Hit to your localhost IP http://127.0.0.1:8070/genSign
-
 Input To Your Body to generate a signature or to get an access token
 
 ```
@@ -26,3 +20,9 @@ Input To Your Body to generate a signature or to get an access token
 }
 
 ```
+
+## Acess Token
+Hit to your localhost IP http://127.0.0.1:8070/accessToken
+
+## Acess Token
+Hit to your localhost IP http://127.0.0.1:8070/genSign
