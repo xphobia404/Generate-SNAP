@@ -26,7 +26,7 @@ Input to your request body to generate a signature or to get an access token
     "publicKey": "your-public-key",
     "privateKey": "your-private-key",
     "accessToken": "your-access-token",
-    "uri": "v1/balance-inquiry",
+    "uri": "/v1/balance-inquiry", // example target
     "body": {
         "key1": "value1",
         "key2": "value2"
