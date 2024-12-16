@@ -3,7 +3,7 @@
 - npm install dotenv express
 - run 'node generateSNAP.js'
 
-Input To Your Body to generate a signature or to get an access token
+Input to your request body to generate a signature or to get an access token
 
 ```
 {
