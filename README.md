@@ -4,10 +4,10 @@
 - run 'node generateSNAP.js'
 
 ## Acess Token
-- http://127.0.0.1:8070/accessToken
+Hit to your localhost IP http://127.0.0.1:8070/accessToken
 
 ## Acess Token
-- http://127.0.0.1:8070/genSign
+Hit to your localhost IP http://127.0.0.1:8070/genSign
 
 Input To Your Body to generate a signature or to get an access token
 
