@@ -21,8 +21,8 @@ Input To Your Body to generate a signature or to get an access token
 
 ```
 
-## Acess Token
+## Get Acess Token
 Hit to your localhost IP http://127.0.0.1:8070/accessToken
 
-## Acess Token
+## Get Signature
 Hit to your localhost IP http://127.0.0.1:8070/genSign
