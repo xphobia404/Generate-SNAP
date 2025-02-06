@@ -6,7 +6,8 @@
 
 If get a response "200 Connect" it successfully connect
 
-Input to your request body to generate a signature or to get an access token
+## Get Acess Token
+Input to your request body to generate a signature access token
 
 ### Format Input For API Signature Access Token
 ```
@@ -19,8 +20,11 @@ Input to your request body to generate a signature or to get an access token
 }
 ```
 
-## Get Acess Token
 Hit with Postman to your localhost IP http://127.0.0.1:8070/accessToken
+
+## Get Signature
+Input to your request body to generate a signature
+URI and body is mandatory
 
 ### Format Input For API Generate Signature
 ```
@@ -50,6 +54,4 @@ Hit with Postman to your localhost IP http://127.0.0.1:8070/accessToken
     }
 }
 ```
-
-## Get Signature
 Hit with Postman to your localhost IP http://127.0.0.1:8070/genSign
