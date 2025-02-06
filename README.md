@@ -2,10 +2,27 @@
 
 - npm install dotenv express
 - run 'node generateSNAP.js'
+- test response with Postman hit this API: http://127.0.0.1:8070/testRes
+
+If get a response "200 Connect" it successfully connect
 
 Input to your request body to generate a signature or to get an access token
 
-### Format Input
+### Format Input For API Signature Access Token
+```
+{
+    "clientId": "",       // Your client ID
+    "clientSecret": "",   // Your client secret
+    "publicKey": "",      // Your public key
+    "privateKey": "",     // Your private key (base64 encoded)
+    "accessToken": ""     // Access token, if available
+}
+```
+
+## Get Acess Token
+Hit with Postman to your localhost IP http://127.0.0.1:8070/accessToken
+
+### Format Input For API Generate Signature
 ```
 {
     "clientId": "",       // Your client ID
@@ -14,7 +31,7 @@ Input to your request body to generate a signature or to get an access token
     "privateKey": "",     // Your private key (base64 encoded)
     "accessToken": "",    // Access token, if available
     "uri": "",            // Target URI for the request
-    "body": {}            // Additional data to include in the request body
+    "body": {}            // Data to include in the request body
 }
 ```
 
@@ -34,8 +51,5 @@ Input to your request body to generate a signature or to get an access token
 }
 ```
 
-## Get Acess Token
-Hit to your localhost IP http://127.0.0.1:8070/accessToken
-
 ## Get Signature
-Hit to your localhost IP http://127.0.0.1:8070/genSign
+Hit with Postman to your localhost IP http://127.0.0.1:8070/genSign
