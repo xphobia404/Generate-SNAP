@@ -120,6 +120,16 @@ function generateSign(requestBody) {
     }
 }
 
+// Test connection
+app.post('/testRes', (req, res) => {
+    try {
+        res.status(200).send({ "responseCode": "200 Connect" });
+        console.log("success send API");
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
 // Endpoint to generate access token
 app.post('/accessToken', (req, res) => {
     try {
