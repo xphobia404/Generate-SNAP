@@ -2,7 +2,7 @@
 
 - npm install dotenv express
 - run 'node generateSNAP.js'
-- test response with Postman hit this API: http://127.0.0.1:8070/test-res
+- test response with Postman hit this API: http://127.0.0.1:8070/test-res with method post
 
 If get a response "200 Connect" it successfully connect
 
@@ -20,7 +20,7 @@ Input to your request body to generate a signature access token
 }
 ```
 
-Hit with Postman to your localhost IP http://127.0.0.1:8070/access-token
+Hit with Postman to your localhost IP http://127.0.0.1:8070/access-token with method post
 
 ## Get Signature
 Input to your request body to generate a signature
@@ -54,4 +54,4 @@ URI and body is mandatory
     }
 }
 ```
-Hit with Postman to your localhost IP http://127.0.0.1:8070/generate-sign
+Hit with Postman to your localhost IP http://127.0.0.1:8070/generate-sign with method post
