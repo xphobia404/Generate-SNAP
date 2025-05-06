@@ -121,7 +121,7 @@ function generateSign(requestBody) {
 }
 
 // Test connection
-app.post('/testRes', (req, res) => {
+app.post('/test-res', (req, res) => {
     try {
         res.status(200).send({ "responseCode": "200 Connect" });
         console.log("success send API");
@@ -131,7 +131,7 @@ app.post('/testRes', (req, res) => {
 });
 
 // Endpoint to generate access token
-app.post('/accessToken', (req, res) => {
+app.post('/access-token', (req, res) => {
     try {
         console.log("Request Body:", req.body);
         const accessData = generateAccess(req.body);
@@ -142,7 +142,7 @@ app.post('/accessToken', (req, res) => {
 });
 
 // Endpoint to generate signature
-app.post('/genSign', (req, res) => {
+app.post('/generate-sign', (req, res) => {
     try {
         console.log("Request Body:", req.body);
         const genSign = generateSign(req.body);
